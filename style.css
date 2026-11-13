@@ -1,0 +1,47 @@
+html {
+    background-color: #dce0e8;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+header,
+main,
+nav,
+footer,
+div {
+    padding:3%;
+}
+
+header {
+    display: grid;
+    gap: 10px;
+    background-color: #eff1f5;
+}
+
+nav {
+    display: grid;
+    gap:20px;
+    border-radius: 20px;
+    background-color: #ccd0da;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: 800;
+    color:black;
+}
+
+@media (min-width:600px) {
+    
+}
