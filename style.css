@@ -13,13 +13,11 @@ img {
     height: 100%;
     display: block;
     object-fit: cover;
-    transition: transform 2s;
 }
 
 .imgBox {
     aspect-ratio: 1 / 1;
     overflow: hidden;
-
 }
 
 .hidden {
@@ -29,9 +27,8 @@ img {
 header,
 main,
 nav,
-footer,
-div {
-    padding:3%;
+footer {
+    padding: 3%;
 }
 
 header {
@@ -41,19 +38,21 @@ header {
 }
 
 nav {
+    padding: 5%;
     display: grid;
-    gap:20px;
+    gap: 20px;
     border-radius: 20px;
-    background-color: #ccd0da;
+    background-color: #9ca0b0;
 }
 
-nav a {
+a {
     text-decoration: none;
+    color: black;
 }
 
 nav a:hover {
     font-weight: 800;
-    color:black;
+    color: black;
 }
 
 #maintitle {
@@ -68,8 +67,36 @@ nav a:hover {
     font-display: swap;
 }
 
+.bookGrid {
+    display: grid;
+    gap: 10px;
+}
+
+.bookGrid .bookGridItem {
+    display: grid;
+    padding: 5%;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: #9ca0b0;
+
+    .imgBox {
+        aspect-ratio: auto;
+        padding: 0%;
+    }
+}
+
 @media (min-width:600px) {
     #maintitle {
         justify-self: left;
+    }
+
+    .bookGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        grid-template-columns: repeat(4, 1fr);
+        font-size: 1.5em;
+        justify-items: center;
     }
 }
