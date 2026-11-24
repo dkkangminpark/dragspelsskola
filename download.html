@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ljudfiler | Dragspelsskola</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/.assets/images/favicon.ico"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.11/dist/htmx.min.js"
+      integrity="sha384-2OatzQy1H+Zd/IIrjr1TcuDGqLXeHhbooAyJY1KdQMKnr4LZ22k31GBLdYKHmVjg"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header
+      hx-get="/comp/header.html"
+      hx-trigger="load"
+      hx-swap="outerHTML"
+    ></header>
+    <main>
+      <h2 class="downloadTITLE">Ljudfiler till DRAGSPELSSKOLA.SE</h2>
+      <p>
+        Detta är de mp3-filer som medföljer den cd som finns med i bok ett och
+        två.
+      </p>
+      <p>
+        Filerna är packade som en .zip-fil. Oftast räcker det att klicka på dem
+        för att packa upp dem.
+      </p>
+      <p>
+        Om detta inte fungerar kan du ladda ner en app (7z, WinRAR elller dyl.)
+        som kan packa upp zip-filer på din telefon / surfplatta / dator.
+      </p>
+      <p class="downloadOBS">
+        OBSERVERA! Om du får några förfrågningar om säkerhet, så är nedanstående
+        filer kontrollerade och säkra.
+      </p>
+      <div class="bookGrid">
+        <div class="bookGridItem">
+          <div class="titleBox">
+            <h2>Ragnar Sundvist</h2>
+            <h3>Musiken och Livet</h3>
+            <p>Dragspelsskola.se</p>
+          </div>
+          <div class="imgBox">
+            <img src="/.assets/images/books/RS1-nyhet.jpg" alt="" />
+          </div>
+          <a href="/.assets/zip/Sundquist_ljudfiler.zip">
+            Klicka här för att ladda ner ljudfilerna. (.zip) (68 MB)
+          </a>
+        </div>
+        <div class="bookGridItem">
+          <div class="titleBox">
+            <h2>Melodialbum</h2>
+            <h3>Jul - Födelsedag - Midsommar</h3>
+            <p>Dragspelsskola.se</p>
+          </div>
+          <div class="imgBox">
+            <img src="/.assets/images/books/Cover_midsommar.png" alt="" />
+          </div>
+          <a href="/.assets/zip/Jul-Fodelsedag-Midsommar.zip">
+            Klicka här för att ladda ner ljudfilerna. (.zip) (68 MB)
+          </a>
+        </div>
+        <div class="bookGridItem">
+          <div class="titleBox">
+            <h2>Convertor - Melodibas</h2>
+            <p>Dragspelsskola.se</p>
+          </div>
+          <div class="imgBox">
+            <img src="/.assets/images/books/Cover_convertor.png" alt="" />
+          </div>
+          <a href="/.assets/zip/Melodibasskola_ljudfiler-BETA-version2.zip">
+            Klicka här för att ladda ner ljudfilerna. (.zip) (175 MB)
+          </a>
+          <p>(ANTALET FILER KOMPLETTERAS EFTERHAND)</p>
+        </div>
+        <div class="bookGridItem del1och2">
+          <div class="titleBox">
+            <h2>DEL 1 & DEL 2</h2>
+            <p>Dragspelsskola.se</p>
+          </div>
+          <div class="del1o2">
+            <img
+              src="/.assets/images/books/CollageBokCd_grabakgrundSTOR.png"
+              alt=""
+            />
+          </div>
+          <div class="downloadLankar">
+            <a href="/.assets/zip/Dragspelsskolan_DEL_1_ljudfiler.zip">
+              Klicka här för att ladda ner ljudfilerna för DEL 1. (.zip) (255
+              MB)
+            </a>
+            <a href="/.assets/zip/Dragspelsskola _DEL_2_ljudfiler.zip">
+              Klicka här för att ladda ner ljudfilerna för DEL 2. (.zip) (330
+              MB)
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      hx-get="/comp/footer.html"
+      hx-trigger="load"
+      hx-swap="outerHTML"
+    ></footer>
+  </body>
+</html>

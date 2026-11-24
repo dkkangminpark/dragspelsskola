@@ -8,53 +8,6 @@ html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-.imgBox {
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-}
-
-.hidden {
-    display: none;
-}
-
-header,
-main,
-nav,
-footer {
-    padding: 3%;
-}
-
-header {
-    display: grid;
-    gap: 10px;
-    background-color: #eff1f5;
-}
-
-nav {
-    padding: 5%;
-    display: grid;
-    gap: 20px;
-    border-radius: 20px;
-    background-color: #9ca0b0;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-nav a:hover {
-    font-weight: 800;
-    color: black;
-}
-
 #maintitle {
     font-family: 'Copperplate Gothic Bold Regular';
     font-size: 6vw;
@@ -67,9 +20,100 @@ nav a:hover {
     font-display: swap;
 }
 
-.bookGrid {
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.imgBox {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.del1o2 img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.hidden {
+    display: none;
+}
+
+.center {
+    justify-self: center;
+    align-self: center;
+}
+
+header,
+main,
+nav,
+footer {
+    padding: 3%;
+}
+
+header,
+footer {
     display: grid;
     gap: 10px;
+    background-color: #eff1f5;
+}
+
+nav {
+    padding: 5%;
+    display: grid;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: #9ca0b0;
+
+}
+
+nav a:hover {
+    font-weight: 800;
+    color: black;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+/* nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    background-color: black;
+    transition: width 0.25s ease, left 0.25s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+    left: 0;
+} */
+
+.bookGrid,
+.footerGrid {
+    display: grid;
+    gap: 10px;
+}
+
+.del1och2 {
+    p, .downloadLankar{
+        align-self: end;
+    }
+    .downloadLankar {
+        display: grid;
+        gap: 5px;
+    }
+    .imgBox {
+        align-self: center;
+    }
 }
 
 .bookGrid .bookGridItem {
@@ -85,6 +129,33 @@ nav a:hover {
     }
 }
 
+.footerGrid .footerGridItem {
+    display: grid;
+    padding: 5%;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: #9ca0b0;
+}
+
+.backToStart {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    justify-self: center;
+    align-self: center;
+}
+
+.downloadTITLE {
+    font-size: 2em;
+    padding-bottom: 5px;
+}
+
+.downloadOBS {
+    padding-top: 15px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
 @media (min-width:600px) {
     #maintitle {
         justify-self: left;
@@ -94,8 +165,12 @@ nav a:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .footerGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     nav {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         font-size: 1.5em;
         justify-items: center;
     }
