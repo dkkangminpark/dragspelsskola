@@ -71,10 +71,10 @@ nav {
 
 }
 
-nav a:hover {
+/* nav a:hover {
     font-weight: 800;
     color: black;
-}
+} */
 
 header a {
     text-decoration: none;
@@ -82,7 +82,7 @@ header a {
     position: relative;
 }
 
-/* nav a::after {
+nav a::after { /* Beredd att förklara det här "I CSS är: :after ett pseudo-element som skapar ett virtuellt underordnat element omedelbart efter det valda elementets faktiska innehåll." */
     content: "";
     position: absolute;
     width: 0;
@@ -96,7 +96,7 @@ header a {
 nav a:hover::after {
     width: 100%;
     left: 0;
-} */
+}
 
 .grid {
     display: grid;
